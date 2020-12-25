@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="discription" content="ドットインストール詳細CSSグリッドレイアウト編">
+  <title>CSSグリッドレイアウト</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>グリッド内での要素の揃え方</h1>
+  <img src="../img/grid.png" width = "600px">
+  <h2>指定なし</h2>
+  <div class="container">
+    <h1>tittle</h1>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+  </div>
+
+  <h1>justify-content</h1>
+  <p>グリッド全体をどう揃えるかのプロパティ</p>
+  <div class="container containerA">
+      <h2>start</h2>
+      <div class="box1">1<br>start は左揃え</div>
+      <div class="box2">2<br>end は右揃え</div>
+      <div class="box3">3<br>center は中央揃え</div>
+      <div class="box4">4<br>space-between は余白を間に配置</div>
+      </div>
+
+      <div class="container containerB">
+      <h2>end</h2>
+      <div class="box1">1<br>start は左揃え</div>
+      <div class="box2">2<br>end は右揃え</div>
+      <div class="box3">3<br>center は中央揃え</div>
+      <div class="box4">4<br>space-between は余白を間に配置</div>
+      </div>
+
+      <div class="container containerC">
+      <h2>center</h2>
+      <div class="box1">1<br>start は左揃え</div>
+      <div class="box2">2<br>end は右揃え</div>
+      <div class="box3">3<br>center は中央揃え</div>
+      <div class="box4">4<br>space-between は余白を間に配置</div>
+      </div>
+      
+      <div class="container containerD">
+      <h2>space-between</h2>
+      <div class="box1">1<br>start は左揃え</div>
+      <div class="box2">2<br>end は右揃え</div>
+      <div class="box3">3<br>center は中央揃え</div>
+      <div class="box4">4<br>space-between は余白を間に配置</div>
+      </div>
+
+  <h1>align-content</h1>
+  <p>グリッド全体を行方向でどう揃えるかのプロパティ</p>
+  <div class="container containerE">
+    <h2>start</h2>
+    <div class="box1">1<br>start は上揃え</div>
+    <div class="box2">2<br>end は下揃え</div>
+    <div class="box3">3<br>center は中央揃え</div>
+    <div class="box4">4<br>space-between は余白を間に配置</div>
+  </div>
+
+  <div class="container containerF">
+    <h2>end</h2>
+    <div class="box1">1<br>start は上揃え</div>
+    <div class="box2">2<br>end は下揃え</div>
+    <div class="box3">3<br>center は中央揃え</div>
+    <div class="box4">4<br>space-between は余白を間に配置</div>
+  </div>
+
+  <div class="container containerG">
+    <h2>center</h2>
+    <div class="box1">1<br>start は上揃え</div>
+    <div class="box2">2<br>end は下揃え</div>
+    <div class="box3">3<br>center は中央揃え</div>
+    <div class="box4">4<br>space-between は余白を間に配置</div>
+  </div>
+
+  <div class="container containerH">
+    <h2>space-between</h2>
+    <div class="box1">1<br>start は上揃え</div>
+    <div class="box2">2<br>end は下揃え</div>
+    <div class="box3">3<br>center は中央揃え</div>
+    <div class="box4">4<br>space-between は余白を間に配置</div>
+  </div>
+
+  <!-- グリッド内の揃えを制御 -->
+  <h1>justify-items</h1>
+  <p>グリッド内で列方向の揃えを制御するプロパティ</p>
+  <div class="container2 containerA2">
+      <h2>start</h2>
+      <div class="box1">1<br>start は左揃え</div>
+      <div class="box2">2<br>end は右揃え</div>
+      <div class="box3">3<br>center は中央揃え</div>
+      <div class="box4">4</div>
+      </div>
+
+      <div class="container2 containerB2">
+      <h2>end</h2>
+      <div class="box1">1<br>start は左揃え</div>
+      <div class="box2">2<br>end は右揃え</div>
+      <div class="box3">3<br>center は中央揃え</div>
+      <div class="box4">4</div>
+      </div>
+
+      <div class="container2 containerC2">
+      <h2>center</h2>
+      <div class="box1">1<br>start は左揃え</div>
+      <div class="box2">2<br>end は右揃え</div>
+      <div class="box3">3<br>center は中央揃え</div>
+      <div class="box4">4</div>
+      </div>
+      
+
+  <h1>align-items</h1>
+  <p>グリッド内で行方向の揃えを制御するプロパティ</p>
+  <div class="container2 containerE2">
+    <h2>start</h2>
+    <div class="box1">1<br>start は上揃え</div>
+    <div class="box2">2<br>end は下揃え</div>
+    <div class="box3">3<br>center は中央揃え</div>
+    <div class="box4">4</div>
+  </div>
+
+  <div class="container2 containerF2">
+    <h2>end</h2>
+    <div class="box1">1<br>start は上揃え</div>
+    <div class="box2">2<br>end は下揃え</div>
+    <div class="box3">3<br>center は中央揃え</div>
+    <div class="box4">4</div>
+  </div>
+
+  <div class="container2 containerG2">
+    <h2>center</h2>
+    <div class="box1">1<br>start は上揃え</div>
+    <div class="box2">2<br>end は下揃え</div>
+    <div class="box3">3<br>center は中央揃え</div>
+    <div class="box4">4</div>
+  </div>
+
+  <h1>justify-selfとalign-self</h1>
+  <p>個々の要素をグリッドに揃えるためのプロパティ</p>
+  <div class="container3 ">
+    <div class="boxA boxz">1<br>start は 左揃え</div>
+    <div class="boxB boxz">2<br>end は右揃え</div>
+    <div class="boxC boxz">3<br>center は中央揃え</div>
+    <div class="boxD boxz">4<br>start は上揃え</div>
+    <div class="boxE boxz">5<br>end は下揃え</div>
+    <div class="boxF boxz">6<br>center は中央揃え</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+}
+
+.box1 {
+  background-color: hsl(0, 60%, 60%);
+}
+
+.box2 {
+  background-color: hsl(60, 60%, 60%);
+}
+
+.box3 {
+  background-color: hsl(120, 60%, 60%);
+}
+
+.box4 {
+  background-color: hsl(180, 60%, 60%);
+}
+
+.box5 {
+  background-color: hsl(240, 60%, 60%);
+}
+
+.container {
+  display: grid;
+  background-color: burlywood;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: 100px 100px;
+  gap: 10px 10px;
+  height: 250px;
+  margin-top: 10px;
+} 
+
+.containerA {
+  justify-content: start;
+}
+
+.containerB {
+  justify-content: end;
+}
+
+.containerC {
+  justify-content: center;
+}
+
+.containerD {
+  justify-content: space-between;
+}
+
+.containerE {
+  align-content: start;
+}
+
+.containerF {
+  align-content: end;
+}
+
+.containerG {
+  align-content: center;
+}
+
+.containerH {
+  align-content: space-between;
+}
+
+
+
+/* グリッド内の指示 */
+
+.container2 {
+  display: grid;
+  background-color: rgb(231, 188, 220);
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: 100px 100px;
+  gap: 10px 10px;
+  height: 250px;
+  margin-top: 10px;
+} 
+
+.containerA2 {
+  justify-items: start;
+}
+
+.containerB2 {
+  justify-items: end;
+}
+
+.containerC2 {
+  justify-items: center;
+}
+
+.containerD2 {
+  justify-items: space-between;
+}
+
+.containerE2 {
+  align-items: start;
+}
+
+.containerF2 {
+  align-items: end;
+}
+
+.containerG2 {
+  align-items: center;
+}
+
+.containerH2 {
+  align-items: space-between;
+}
+
+/* 個別の指示 */
+
+.container3 {
+  display: grid;
+  background-color: rgb(188, 210, 231);
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: 100px 100px;
+  gap: 10px 10px;
+  height: 250px;
+  margin-top: 10px;
+} 
+
+.boxz {
+  background-color: rgb(81, 146, 243);
+}
+
+.boxA {
+  justify-self: start;
+}
+
+.boxB {
+  justify-self: end;
+}
+
+.boxC {
+  justify-self: center;
+}
+
+.boxD {
+  align-self: start;
+}
+
+.boxE {
+  align-self: end;
+}
+.boxF {
+  align-self: center;
+}
+

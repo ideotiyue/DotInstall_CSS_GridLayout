@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="discription" content="ドットインストール詳細CSSグリッドレイアウト編">
+  <title>CSSグリッドレイアウト</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>grid-auto-rowsの使い方</h1>
+  <p>何行になるかわからない場合、 grid-auto-rows: 100px; とすると grid で定義されていない行ができた場合にその高さが 100px になる。</p>
+  
+  <h1>auto-fillの例</h1>
+   <div class="container">
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+      <div class="box5">5</div>
+    </div>
+    <p>
+      列や行の数が増えた時はrepeatを用いる。<br>
+      列数を固定せず親要素の幅に入る限り、といった設定にするにはrepeat() の数を固定ではなくて auto-fill とする。
+    </p>
+
+  <h1>minmaxを使用する例</h1>
+   <div class="container2">
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+      <div class="box5">5</div>
+    </div>
+    <p>
+      新しい列が増えるまでは余白いっぱいまで均等に幅を広げたいときなど。<br>
+      列の幅をminmax(100px, 1fr)とする。<br>
+      ※列の幅を 100px から 1fr の範囲にしてね、という意味<br>
+      ※配置する要素がなくなったときにはまた右側が空いてしまいます。
+    </p>
+
+  <h1>auto-fitを使用する例</h1>
+   <div class="container3">
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+      <div class="box5">5</div>
+    </div>
+    <p>
+      新しい列が増えるまでは余白いっぱいまで均等に幅を広げたい&配置する要素がなくなったら、あとは横幅いっぱいに均等に配置したいとき。
+    </p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+.container {
+  /* グリッドレイアウトを使う指定 */
+  display: grid;
+
+  /* グリッドレイアウトの列の指定 */
+  /* grid-template-columns: 100px 100px; */
+
+  /* グリッドレイアウトの行の指定 */
+  /* grid-template-rows: 100px 100px 100px; */
+
+  /* グリッドレイアウトの列の幅を比率で可変にする指定 */
+  grid-template-columns: 100px 2fr 1fr;
+  grid-template-rows: 100px 100px;
+  gap: 10px 40px;
+} 
+
+.box1 {
+  background-color: hsl(0, 60%, 60%);
+}
+
+.box2 {
+  background-color: hsl(60, 60%, 60%);
+}
+
+.box3 {
+  background-color: hsl(120, 60%, 60%);
+}
+
+.box4 {
+  background-color: hsl(180, 60%, 60%);
+}
+
+.box5 {
+  background-color: hsl(240, 60%, 60%);
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="discription" content="ドットインストール詳細CSSグリッドレイアウト編">
+  <title>CSSグリッドレイアウト</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>grid-template-areas</h1>
+  <img src="../img/GridTemplateAreas.png" width="300px" height="200px">
+  <p>grid-template-areas プロパティを使って、上記のようなグリッドの配置を文字列で表現することも可能。<br>
+    各領域に指定するgrid-areaの名前は、grid-template-areasを指定する際に縦横がずれないよう1 文字ずつで指定するとよい。<br>
+    それから、この中で要素を配置したくない箇所がある場合は、「 . 」（ピリオド）を使ってあげれば OK 。<br>
+    ただし、配置する領域は四角になっていないといけない。<br>
+    L 字型や、飛び石のように配置することはできない。<br>
+  </p>
+   <div class="container">
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+    </div>
+</body>
+</html>
